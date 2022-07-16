@@ -177,15 +177,20 @@ fun DetailsScreen (
             .fillMaxWidth()
     ){
 
+        Spacer ( modifier =  Modifier.height(50.dp))
+
         Image(
             painter = painterResource(id = R.drawable.download),
             contentDescription = null
         )
 
+        Spacer ( modifier =  Modifier.height(50.dp))
+
         Row(){
             Text(
                 text = "Main Information",
                 fontWeight =  FontWeight.Bold,
+                fontSize = 20.sp,
                 modifier = Modifier
                     .weight(1f)
                     .background(Color.LightGray)
@@ -219,6 +224,7 @@ fun DetailsScreen (
         Row(){
             Text(
                 text = "Sub Information",
+                fontSize = 20.sp,
                 fontWeight =  FontWeight.Bold,
                 modifier = Modifier
                     .weight(1f)
